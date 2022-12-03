@@ -15,7 +15,7 @@ const cmds = [{
         });
     }
 }]
-//test
+
 // Interaction Create Event
 client.on('interactionCreate', async interaction => {
     if (interaction.isCommand()) {
