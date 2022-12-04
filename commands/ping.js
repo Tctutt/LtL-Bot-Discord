@@ -1,3 +1,5 @@
+[GatewayIntentBits.Guilds]
+
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('ping')
