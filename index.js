@@ -8,7 +8,7 @@ const { Client } = require('discord.js');
 const client = new Client({ intents: 32767 });
 
 //New Commands Collection
-client.commands = new client.Collection();
+client.commands = new map.Collection();
 
 // Defined Commands Location
 const commandsPath = path.join(__dirname, 'commands');
