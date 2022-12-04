@@ -5,7 +5,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const keepAlive = require(`./server`);
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const client = new Client({ intents: 3276799 });
+const client = new Client({ intents: [GatewayIntentBits.Guilds, 32767] });
 
 //New Commands Collection
 client.commands = new Collection();
