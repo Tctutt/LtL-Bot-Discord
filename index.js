@@ -3,12 +3,13 @@
 require('dotenv').config();
 const fs = require('node:fs');
 const path = require('node:path');
+const mapp = new Map();
 const keepAlive = require(`./server`);
 const { Client } = require('discord.js');
 const client = new Client({ intents: 32767 });
 
 //New Commands Collection
-client.commands = new map.Collection();
+client.commands = new mapp.Collection();
 
 // Defined Commands Location
 const commandsPath = path.join(__dirname, 'commands');
