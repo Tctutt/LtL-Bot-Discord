@@ -4,7 +4,7 @@ require('dotenv').config();
 const fs = require('node:fs');
 const path = require('node:path');
 const keepAlive = require(`./server`);
-const { Client } = require('discord.js');
+const { Client, Collection, Events } = require('discord.js');
 const client = new Client({ intents: 32767 });
 
 //New Commands Collection
