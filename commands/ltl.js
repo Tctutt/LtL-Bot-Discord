@@ -2,9 +2,9 @@ const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('LtL')
-        .setDescription('Main Bot Command'),
+        .setName('Test')
+        .setDescription('Test'),
     async execute(interaction) {
-        await interaction.reply('This command was registered and works.');
+        await interaction.reply('This worked!');
     },
-};
+}; 
