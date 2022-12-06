@@ -9,9 +9,9 @@ module.exports = {
                 .setDescription('Subcommand for the command')
                 .setRequired(true)
                 .addChoices(
-                    { name: 'Setup', value: 'something here' },
-                    { name: 'Default', value: 'something here' },
-                    { name: 'Default', value: 'something here' },
+                    { name: 'setup', value: 'something here' },
+                    { name: 'default', value: 'something here' },
+                    { name: 'default', value: 'something here' },
                 )),
     async execute(interaction) {
         await interaction.reply('Pong!');
