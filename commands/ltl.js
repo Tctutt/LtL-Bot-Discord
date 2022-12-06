@@ -2,7 +2,7 @@ const { SlashCommandBuilder } = require('discord.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
-        .setName('LtL')
+        .setName('ltl')
         .setDescription('The main command for the Bot.')
         .addStringOption(option =>
             option.setName('SubCommand')
